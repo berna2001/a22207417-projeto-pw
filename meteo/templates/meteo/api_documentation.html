@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação da API Meteo</title>
+</head>
+<body>
+    <h1>Documentação da API Meteo</h1>
+
+    <h2>Endpoints</h2>
+
+    <h3>Lista de Cidades</h3>
+    <p><strong>GET /meteo/api/cities/</strong></p>
+    <p>Retorna a lista de cidades com previsões meteorológicas disponíveis.</p>
+
+    <h3>Previsão Meteorológica de Hoje para uma Cidade</h3>
+    <p><strong>GET /meteo/api/weather/today/&lt;city_id&gt;/</strong></p>
+    <p>Retorna a previsão meteorológica de hoje para a cidade especificada.</p>
+    <p><strong>Parâmetros:</strong></p>
+    <ul>
+        <li><strong>city_id</strong> (integer): O ID da cidade</li>
+    </ul>
+
+    <h3>Previsão Meteorológica para os Próximos 5 Dias para uma Cidade</h3>
+    <p><strong>GET /meteo/api/weather/five_days/&lt;city_id&gt;/</strong></p>
+    <p>Retorna a previsão meteorológica para os próximos 5 dias para a cidade especificada.</p>
+    <p><strong>Parâmetros:</strong></p>
+    <ul>
+        <li><strong>city_id</strong> (integer): O ID da cidade</li>
+    </ul>
+
+    <h2>Exemplo de Resposta</h2>
+
+    <pre>
+{
+    "city": "Lisboa",
+    "date": "2023-06-05",
+    "t_min": 15.0,
+    "t_max": 25.0,
+    "description": "Céu limpo",
+    "precipitation": 0.0,
+    "icon_url": "/static/meteo/1.svg"
+}
+    </pre>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+{% extends 'curso/layout.html' %}
+
+{% block title %}Detalhes do Projeto{% endblock %}
+
+{% block content %}
+<h1>Projeto de {{ projeto.disciplina.nome }} ({{ projeto.ano }}/{{ projeto.semestre }})</h1>
+<p>{{ projeto.descricao }}</p>
+<h2>Conceitos Aplicados</h2>
+<p>{{ projeto.conceitos_aplicados }}</p>
+<h2>Tecnologias Usadas</h2>
+<p>{{ projeto.tecnologias_usadas }}</p>
+<h2>Linguagens de Programação</h2>
+<ul>
+    {% for linguagem in projeto.linguagens_programacao.all %}
+    <li>{{ linguagem.nome }}</li>
+    {% endfor %}
+</ul>
+{% if projeto.imagem %}
+<h2>Imagem</h2>
+<img src="{{ projeto.imagem.url }}" alt="Imagem do projeto">
+{% endif %}
+<h2>Vídeo Demo</h2>
+<a href="{{ projeto.video_demo }}">Ver Vídeo</a>
+{% if projeto.link_github %}
+<h2>GitHub</h2>
+<a href="{{ projeto.link_github }}">Ver Projeto no GitHub</a>
+{% endif %}
+<nav>
+    <a href="{% url 'curso:detalhes_disciplina' projeto.disciplina.id %}">Voltar à disciplina</a>
+</nav>
+{% endblock %}

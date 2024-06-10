@@ -1,0 +1,13 @@
+{% extends 'bandas/layout.html' %}
+
+{% block content %}
+    <h3>Musica</h3>
+    <ul>
+        <li>
+            {% if request.user.is_authenticated %}
+            <a>{{ musica.titulo }}</a>
+            <li><a>Duração: {{ musica.duracao }}</a></li>
+            {% endif %}
+        </li>
+    </ul>
+{% endblock %}

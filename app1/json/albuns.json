@@ -1,0 +1,115 @@
+{
+    "Songs About Jane": {
+        "banda": "Maroon 5",
+        "ano_lancamento": 2002,
+        "musicas": {
+            "Harder to Breathe": "2:53",
+            "This Love": "3:26",
+            "She Will Be Loved": "4:17",
+            "Tangled": "3:18",
+            "The Sun": "4:12",
+            "Must Get Out": "3:59"
+        }
+    },
+    "A Rush of Blood to the Head": {
+        "banda": "Coldplay",
+        "ano_lancamento": 2002,
+        "musicas": {
+            "Politik": "5:18",
+            "In My Place": "3:48",
+            "God Put a Smile upon Your Face": "4:57",
+            "The Scientist": "5:09",
+            "Clocks": "5:07",
+            "Daylight": "5:27",
+            "Green Eyes": "3:43"
+        }
+    },
+    "The Fame": {
+        "banda": "Lady Gaga",
+        "ano_lancamento": 2008,
+        "musicas": {
+            "Just Dance": "4:02",
+            "LoveGame": "3:38",
+            "Paparazzi": "3:28",
+            "Poker Face": "3:57",
+            "Eh, Eh (Nothing Else I Can Say)": "2:56"
+        }
+    },
+    "Love Yourself: Answer": {
+        "banda": "BTS",
+        "ano_lancamento": 2018,
+        "musicas": {
+            "Euphoria": "3:48",
+            "Trivia 起 : Just Dance": "3:47",
+            "Serendipity (Full Length Edition)": "4:36",
+            "DNA": "3:43",
+            "Dimple": "4:21"
+        }
+    },
+    "Thank U, Next": {
+        "banda": "Ariana Grande",
+        "ano_lancamento": 2019,
+        "musicas": {
+            "Imagine": "3:32",
+            "Needy": "2:51",
+            "NASA": "3:02",
+            "Bloodline": "3:36",
+            "Fake Smile": "3:28"
+        }
+    },
+    "Shawn Mendes": {
+        "banda": "Shawn Mendes",
+        "ano_lancamento": 2018,
+        "musicas": {
+            "In My Blood": "3:31",
+            "Nervous": "2:44",
+            "Lost in Japan": "3:21",
+            "Where Were You in the Morning?": "3:20",
+            "Like to Be You": "2:39"
+        }
+    },
+    "Divide": {
+        "banda": "Ed Sheeran",
+        "ano_lancamento": 2017,
+        "musicas": {
+            "Eraser": "3:48",
+            "Castle on the Hill": "4:21",
+            "Dive": "3:58",
+            "Shape of You": "3:53",
+            "Perfect": "4:23"
+        }
+    },
+    "Future Nostalgia": {
+        "banda": "Dua Lipa",
+        "ano_lancamento": 2020,
+        "musicas": {
+            "Future Nostalgia": "3:04",
+            "Don't Start Now": "3:03",
+            "Cool": "3:29",
+            "Physical": "3:13",
+            "Levitating": "3:23"
+        }
+    },
+    "Teenage Dream": {
+        "banda": "Katy Perry",
+        "ano_lancamento": 2010,
+        "musicas": {
+            "Teenage Dream": "3:47",
+            "Last Friday Night (T.G.I.F.)": "3:50",
+            "California Gurls": "3:54",
+            "Firework": "3:48",
+            "Peacock": "3:51"
+        }
+    },
+    "24K Magic": {
+        "banda": "Bruno Mars",
+        "ano_lancamento": 2016,
+        "musicas": {
+            "24K Magic": "3:46",
+            "Chunky": "3:06",
+            "Perm": "3:30",
+            "That's What I Like": "3:26",
+            "Versace on the Floor": "4:21"
+        }
+    }
+}

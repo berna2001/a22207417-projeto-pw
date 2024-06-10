@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h2>Festivais</h2>
+    {% for localizacao in localizacao %}
+        <h3>{{ localizacao.nome }}</h3>
+        <ul>
+            {% for festival in localizacao.festival_set.all %}
+                <li>{{ festival.nome }} - Bandas: 
+                {% for banda in festival.bandas.all %}
+                    {{ banda.nome }}{% if not forloop.last %}, {% endif %}
+                {% endfor %}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+{% endblock %}

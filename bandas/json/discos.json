@@ -1,0 +1,104 @@
+{
+  "discos": [
+    {
+      "titulo": "A Night at the Opera",
+      "ano_lancamento": "1975",
+      "banda": "Queen",
+      "musicas": [
+        {"titulo": "Bohemian Rhapsody", "duracao": "6:07"},
+        {"titulo": "You're My Best Friend", "duracao": "2:52"},
+        {"titulo": "Love of My Life", "duracao": "3:38"}
+      ]
+    },
+    {
+      "titulo": "Led Zeppelin IV",
+      "ano_lancamento": "1971",
+      "banda": "Led Zeppelin",
+      "musicas": [
+        {"titulo": "Stairway to Heaven", "duracao": "8:02"},
+        {"titulo": "Black Dog", "duracao": "4:55"},
+        {"titulo": "Rock and Roll", "duracao": "3:40"}
+      ]
+    },
+    {
+      "titulo": "Abbey Road",
+      "ano_lancamento": "1969",
+      "banda": "The Beatles",
+      "musicas": [
+        {"titulo": "Come Together", "duracao": "4:20"},
+        {"titulo": "Something", "duracao": "3:03"},
+        {"titulo": "Here Comes the Sun", "duracao": "3:05"}
+      ]
+    },
+    {
+      "titulo": "Sticky Fingers",
+      "ano_lancamento": "1971",
+      "banda": "The Rolling Stones",
+      "musicas": [
+        {"titulo": "Brown Sugar", "duracao": "3:49"},
+        {"titulo": "Wild Horses", "duracao": "5:42"},
+        {"titulo": "Can't You Hear Me Knocking", "duracao": "7:14"}
+      ]
+    },
+    {
+      "titulo": "The Dark Side of the Moon",
+      "ano_lancamento": "1973",
+      "banda": "Pink Floyd",
+      "musicas": [
+        {"titulo": "Speak to Me", "duracao": "1:30"},
+        {"titulo": "Time", "duracao": "6:53"},
+        {"titulo": "Money", "duracao": "6:30"}
+      ]
+    },
+    {
+      "titulo": "Back in Black",
+      "ano_lancamento": "1980",
+      "banda": "AC/DC",
+      "musicas": [
+        {"titulo": "Hells Bells", "duracao": "5:12"},
+        {"titulo": "Back in Black", "duracao": "4:15"},
+        {"titulo": "You Shook Me All Night Long", "duracao": "3:30"}
+      ]
+    },
+    {
+      "titulo": "Nevermind",
+      "ano_lancamento": "1991",
+      "banda": "Nirvana",
+      "musicas": [
+        {"titulo": "Smells Like Teen Spirit", "duracao": "5:01"},
+        {"titulo": "Come as You Are", "duracao": "3:39"},
+        {"titulo": "Lithium", "duracao": "4:17"}
+      ]
+    },
+    {
+      "titulo": "The Doors",
+      "ano_lancamento": "1967",
+      "banda": "The Doors",
+      "musicas": [
+        {"titulo": "Break On Through (To the Other Side)", "duracao": "2:29"},
+        {"titulo": "Light My Fire", "duracao": "7:06"},
+        {"titulo": "The End", "duracao": "11:41"}
+      ]
+    },
+    {
+      "titulo": "The Joshua Tree",
+      "ano_lancamento": "1987",
+      "banda": "U2",
+      "musicas": [
+        {"titulo": "Where the Streets Have No Name", "duracao": "5:38"},
+        {"titulo": "I Still Haven't Found What I'm Looking For", "duracao": "4:38"},
+        {"titulo": "With or Without You", "duracao": "4:56"}
+      ]
+    },
+    {
+      "titulo": "Machine Head",
+      "ano_lancamento": "1972",
+      "banda": "Deep Purple",
+      "musicas": [
+        {"titulo": "Highway Star", "duracao": "6:05"},
+        {"titulo": "Smoke on the Water", "duracao": "5:40"},
+        {"titulo": "Space Truckin'", "duracao": "4:31"}
+      ]
+    }
+  ]
+}

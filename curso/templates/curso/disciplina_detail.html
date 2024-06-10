@@ -1,0 +1,29 @@
+{% extends 'curso/layout.html' %}
+
+{% block content %}
+<head>
+    <title>{{ disciplina.nome }}</title>
+</head>
+<body>
+    <h1>{{ disciplina.nome }}</h1>
+    <p><strong>Ano:</strong> {{ disciplina.ano }}</p>
+    <p><strong>Semestre:</strong> {{ disciplina.semestre }}</p>
+    <p><strong>ECTS:</strong> {{ disciplina.ects }}</p>
+    <p><strong>Código:</strong> {{ disciplina.curricular_unit_readable_code }}</p>
+    <p><strong>Área Científica:</strong> {{ disciplina.area_cientifica.nome }}</p>
+
+    <h2>Docentes</h2>
+    <ul>
+        {% for docente in disciplina.docentes.all %}
+            <li>{{ docente.nome }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Projetos</h2>
+    <ul>
+        {% for projeto in disciplina.projeto_set.all %}
+            <li>{{ projeto.descricao }}</li>
+        {% endfor %}
+    </ul>
+</body>
+{% endblock %}

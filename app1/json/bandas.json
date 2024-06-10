@@ -1,0 +1,42 @@
+{
+    "Maroon 5": {
+        "nacionalidade": "Estados Unidos",
+        "ano_criacao": 1994
+    },
+    "Coldplay": {
+        "nacionalidade": "Reino Unido",
+        "ano_criacao": 1996
+    },
+    "Lady Gaga": {
+        "nacionalidade": "Estados Unidos",
+        "ano_criacao": 2001
+    },
+    "BTS": {
+        "nacionalidade": "Coreia do Sul",
+        "ano_criacao": 2013
+    },
+    "Ariana Grande": {
+        "nacionalidade": "Estados Unidos",
+        "ano_criacao": 2008
+    },
+    "Shawn Mendes": {
+        "nacionalidade": "Canadá",
+        "ano_criacao": 2013
+    },
+    "Ed Sheeran": {
+        "nacionalidade": "Reino Unido",
+        "ano_criacao": 2004
+    },
+    "Dua Lipa": {
+        "nacionalidade": "Reino Unido",
+        "ano_criacao": 2015
+    },
+    "Katy Perry": {
+        "nacionalidade": "Estados Unidos",
+        "ano_criacao": 2001
+    },
+    "Bruno Mars": {
+        "nacionalidade": "Estados Unidos",
+        "ano_criacao": 2004
+    }
+}

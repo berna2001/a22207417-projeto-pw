@@ -1,0 +1,15 @@
+{% extends 'artigos/layout.html' %}
+
+{% block title %}Detalhes da Receita{% endblock %}
+
+{% block content %}
+<nav>
+    <a href="{% url 'artigos:detalhes_autor' artigo_receita.autor.id %}"class="text-danger">Voltar para Autor</a>
+</nav>
+
+<h1>{{ artigo_receita.titulo }}</h1>
+<img src="{{ artigo_receita.imagem.url }}" alt="{{ artigo_receita.titulo }}">
+<p>{{ artigo_receita.conteudo }}</p>
+<p><strong>Ingredientes:</strong> {{ artigo_receita.ingredientes }}</p>
+<p><strong>Tempo de Preparo:</strong> {{ artigo_receita.tempo_preparo }}</p>
+{% endblock %}

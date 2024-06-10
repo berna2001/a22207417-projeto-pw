@@ -1,0 +1,32 @@
+{% extends 'artigos/layout.html' %}
+
+{% block title %}Detalhes do Autor{% endblock %}
+
+{% block content %}
+<nav>
+    <a href="{% url 'artigos:lista_autores' %}"class="text-danger">Voltar para Lista de Autores</a>
+</nav>
+
+<h1>{{ autor.nome }}</h1>
+<p>{{ autor.bio }}</p>
+
+<h2>Receitas</h2>
+<ul>
+    {% for receita in receitas %}
+    <li>
+        <a href="{% url 'artigos:detalhes_artigo_receita' receita.id %}"class="text-danger">{{ receita.titulo }}</a>
+        {% if request.user.is_authenticated %}
+            <a href="{% url 'artigos:editar_artigo_receita' receita.id %}">
+                <button>Editar</button>
+            </a>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% if request.user.is_authenticated %}
+    <a href="{% url 'artigos:novo_artigo_receita' %}">
+        <button>Inserir nova Receita</button>
+    </a>
+{% endif %}
+
+{% endblock %}

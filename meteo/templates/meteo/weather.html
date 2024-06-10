@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo para Lisboa</title>
+</head>
+<body>
+    <h1>Previsão do Tempo para Lisboa</h1>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% else %}
+        <p>Cidade: {{ city }}</p>
+        <p>Data: {{ date }}</p>
+        <p>Temperatura Mínima: {{ t_min }}°C</p>
+        <p>Temperatura Máxima: {{ t_max }}°C</p>
+        <p>Descrição: {{ description }}</p>
+        <img src="{{ icon_url }}" alt="Ícone do Tempo">
+    {% endif %}
+</body>
+</html>

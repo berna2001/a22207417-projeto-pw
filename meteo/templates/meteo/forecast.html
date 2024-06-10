@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <header class="bg-danger text-white p-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1>Menu</h1>
+                <nav>
+                    <a href="{% url 'curso:lista_cursos' %}" class="btn btn-outline-light">Curso</a>
+                    <a href="{% url 'artigos:lista_autores' %}" class="btn btn-outline-light">Artigos</a>
+                    <a href="{% url 'bandas:lista_bandas' %}" class="btn btn-outline-light">Bandas</a>
+                    <a href="{% url 'meteo:previsao' %}" class="btn btn-outline-light">Metereologia</a>
+                    <a href="{% url 'portfolio:landing_page' %}" class="btn btn-outline-light">Portfolio</a>
+                    {% if request.user.is_authenticated %}
+                        <a href="{% url 'logout' %}" class="btn btn-outline-light">Logout</a>
+                    {% endif %}
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <h1>Previsão do Tempo</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <label for="city">Escolha uma cidade:</label>
+        <select name="city" id="city">
+            {% for city in cities %}
+                <option value="{{ city.id }}">{{ city.name }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Ver previsão</button>
+    </form>
+
+    {% if selected_city %}
+        <h2>Previsão do Tempo para {{ selected_city }}</h2>
+        {% if error %}
+            <p>{{ error }}</p>
+        {% else %}
+            <table>
+                <tr>
+                    <th>Data</th>
+                    <th>Temperatura Mínima</th>
+                    <th>Temperatura Máxima</th>
+                    <th>Descrição</th>
+                    <th>Precipitação</th>
+                    <th>Ícone</th>
+                </tr>
+                {% for day in weather_forecast %}
+                    <tr>
+                        <td>{{ day.date }}</td>
+                        <td>{{ day.t_min }}°C</td>
+                        <td>{{ day.t_max }}°C</td>
+                        <td>{{ day.description }}</td>
+                        <td>{{ day.precipitation }}%</td>
+                        <td><img src="{% static 'static/meteo' %}{{ day.icon_url }}" alt="Ícone do Tempo"></td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% endif %}
+    {% endif %}
+
+    <footer class="bg-danger text-white text-center py-3 mt-4">
+        <p>&copy; 2024 Metereologia. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
+
+

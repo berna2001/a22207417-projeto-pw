@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interesses</title>
+</head>
+<body>
+
+    <header>
+        <h1>Interesses</h1>
+        <nav>
+            <a href="{% url 'pwsite:index' %}">Introducao</a>
+            <a href="{% url 'pwsite:index1' %}">Interesses</a>
+            <a href="{% url 'pwsite:index2' %}">Sobre</a>
+        </nav>
+    </header>
+
+    <main>
+      <h2>Descrição</h2>
+      <p>Django é um framework web de alto nível escrito em Python, o que significa que ele oferece abstrações e funcionalidades avançadas para desenvolver aplicativos web de forma mais rápida e eficiente. </p>
+      <p>Com sua arquitetura baseada em componentes reutilizáveis e vasta biblioteca de plugins e extensões, os desenvolvedores podem aumentar sua produtividade e construir aplicativos robustos.</p>
+
+      <h2>Conteúdo</h2>
+      <p>PythonAnywhere é uma plataforma de hospedagem na nuvem que simplifica o processo de hospedar, desenvolver e executar aplicativos Python.</p>
+      <p>Com um ambiente de desenvolvimento integrado, incluindo um editor de código online e ferramentas de depuração, os desenvolvedores podem escrever, testar e depurar seus aplicativos diretamente no navegador. Além disso, a implantação de aplicativos é facilitada com suporte para integração com sistemas de controle de versão, como Git.</p>
+
+      <h2>Objetivos de Aprendizagem</h2>
+      <p>O principal objetivo desta disciplina é capacitar os alunos com as habilidades necessárias para projetar, desenvolver e implantar aplicações web funcionais e esteticamente atraentes.</p>
+      <p>Além disso, os alunos serão incentivados a explorar as melhores práticas de desenvolvimento web, bem como a importância da acessibilidade, usabilidade e segurança na criação de websites e aplicações.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Programação Web, Universidade Lusófona - Todos os direitos reservados.</p>
+        <p>Data: {{ data }}</p>
+    </footer>
+
+</body>
+</html>

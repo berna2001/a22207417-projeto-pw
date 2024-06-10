@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebCheats</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="bg-danger text-white p-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1>Menu</h1>
+                <nav>
+                    <a href="{% url 'curso:lista_cursos' %}" class="btn btn-outline-light">Curso</a>
+                    <a href="{% url 'artigos:lista_autores' %}" class="btn btn-outline-light">Artigos</a>
+                    <a href="{% url 'bandas:lista_bandas' %}" class="btn btn-outline-light">Bandas</a>
+                    <a href="{% url 'meteo:previsao' %}" class="btn btn-outline-light">Metereologia</a>
+                    <a href="{% url 'portfolio:landing_page' %}" class="btn btn-outline-light">Portfolio</a>
+                    {% if request.user.is_authenticated %}
+                        <a href="{% url 'logout' %}" class="btn btn-outline-light">Logout</a>
+                    {% endif %}
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="container my-5">
+            <div class="container text-center">
+                <a href="{% url 'portfolio:landing_page' %}" class="btn btn-outline-dark">Home</a>
+                <a href="{% url 'portfolio:index' %}" class="btn btn-outline-dark">Portfolio</a>
+                <a href="{% url 'portfolio:me_by_me' %}" class="btn btn-outline-dark">Sobre Mim</a>
+            </div>
+        </section>
+        <section class="hero parallax">
+            <div class="container text-center">
+                <h1 class="display-4 text-dark">WebCheats</h1>
+            </div>
+        </section>
+        <section class="container my-5">
+            <div class="container text-center">
+            <h2>Experiencia na Criacao do Site</h2>
+                <ul>
+                    <p>Este projeto que me foi pedido no âmbito da disciplina de Programação Web permitiu-me descobrir e aprofundar o meu conhecimento âmbito das linguagens de Django, Python, HTML5, CSS, Bootstrap e JavaScript.</p>
+                    <p>Esta ligação entre o curso de Informática de Gestão e a necessidade do conhecimento na criação de sites, na minha opinião, faz todo o sentido e e com certeza uma área que tenciono explorar com mais profundidade.</p>
+                </ul>
+            </div>
+        </section>
+        <section class="container my-5">
+            <div class="container text-center">
+            <h3>Tecnologias Utilizadas</h3>
+                <li>Django - Framework web em Python para desenvolvimento rápido e design limpo.</li>
+                <li>Python - Para a criação de modelos e classes.</li>
+                <li>HTML5 e CSS - Para a estrutura e o estilo das páginas web.</li>
+                <li>Bootstrap - Framework CSS para um design responsivo e componentes prontas para uso.</li>
+                <li>JavaScript - Para funcionalidades interativas e dinâmicas.</li>
+                <li>Git - Controlo de versão do código.</li>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-danger text-white text-center py-3">
+        <p>&copy; 2024 Bernardo Ricardo. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

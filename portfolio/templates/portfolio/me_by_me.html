@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Sobre Mim{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="bg-danger text-white p-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1>Menu</h1>
+                <nav>
+                    <a href="{% url 'curso:lista_cursos' %}" class="btn btn-outline-light">Curso</a>
+                    <a href="{% url 'artigos:lista_autores' %}" class="btn btn-outline-light">Artigos</a>
+                    <a href="{% url 'bandas:lista_bandas' %}" class="btn btn-outline-light">Bandas</a>
+                    <a href="{% url 'meteo:previsao' %}" class="btn btn-outline-light">Metereologia</a>
+                    <a href="{% url 'portfolio:landing_page' %}" class="btn btn-outline-light">Portfolio</a>
+                    {% if request.user.is_authenticated %}
+                        <a href="{% url 'logout' %}" class="btn btn-outline-light">Logout</a>
+                    {% endif %}
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <section class="intro text-center">
+            <ul class="nav justify-content-center">
+                <li><a href="{% url 'portfolio:landing_page' %}" class="btn btn-outline-dark">Home</a></li>
+                <li><a href="{% url 'portfolio:index' %}" class="btn btn-outline-dark">Portfolio</a></li>
+                <li><a href="{% url 'portfolio:web_cheats' %}" class="btn btn-outline-dark">WebCheats</a></li>
+            </ul>
+            <h1>Sobre Mim</h1>
+            <p>Sou um aluno do 2º ano do curso de Informática de Gestão, desde cedo senti-me cativado para a importância da interseção entre a informática e a gestão, reconhecendo o seu potencial para impulsionar o crescimento e a eficiência das organizações. Sou uma pessoa pró-ativa e orientada para resultados. Tenho facilidade em trabalhar em equipa, contribuindo de forma colaborativa para alcançar metas comuns. Ofereço curiosidade e capacidade para resolver problemas incentivam-me a enfrentar desafios de forma criativa e encontrar soluções eficazes. Adoro futebol e conviver com os amigos.</p>
+        </section>
+        <section class="details d-flex flex-wrap justify-content-around">
+            <div class="interests p-3 flex-fill">
+                <h2>Interesses</h2>
+                <ul>
+                    <li>Futebol</li>
+                    <li>Conviver com os amigos</li>
+                    <li>Tecnologia</li>
+                    <li>Jogos de Computador/ Consola</li>
+                </ul>
+            </div>
+            <div class="skills p-3 flex-fill">
+                <h2>Competências</h2>
+                <ul>
+                    <li>Programação em Python, Java e C</li>
+                    <li>Desenvolvimento Web com Django</li>
+                    <li>Gestão de Projetos</li>
+                    <li>Análise de Dados</li>
+                    <li>Análise de Sistemas</li>
+                    <li>Gestão da Informação</li>
+                    <li>Gerenciamento de Projetos</li>
+                    <li>Comunicação</li>
+                    <li>Adaptabilidade</li>
+                </ul>
+            </div>
+            <div class="experience p-3 flex-fill">
+                <h2>Experiência</h2>
+                <ul>
+                    <li>Assistente Técnico de Informática - Advance Option</li>
+                    <li>Projetos Acadêmicos em Desenvolvimento Web</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-danger text-white text-center py-3 mt-4">
+        <p>&copy; 2024 Bernardo Ricardo. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
